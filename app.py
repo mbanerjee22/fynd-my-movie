@@ -232,8 +232,8 @@ def init_app(argv=None):
                                 ])
     app.add_routes(routes)
     app.cleanup_ctx.append(init_db)
-    #web.run_app(app,port=os.environ['PORT'])
-    web.run_app(app,port=8000)
+    web.run_app(app,port=os.environ['PORT'])
+   # web.run_app(app,port=8000)
     return app
 
 movie.try_make_db()
